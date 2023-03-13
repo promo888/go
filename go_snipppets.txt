@@ -1,0 +1,842 @@
+package main
+
+import (
+	"fmt"
+)
+
+type Block struct {
+	Try     func()
+	Catch   func(Exception)
+	Finally func()
+}
+
+type Exception interface{}
+
+func Throw(up Exception) {
+	panic(up)
+}
+
+func (tcf Block) Do() {
+	if tcf.Finally != nil {
+		defer tcf.Finally()
+	}
+	if tcf.Catch != nil {
+		defer func() {
+			if r := recover(); r != nil {
+				tcf.Catch(r)
+			}
+		}()
+	}
+	tcf.Try()
+}
+
+func main() {
+	fmt.Println("We started")
+	Block{
+		Try: func() {
+			fmt.Println("I tried")
+			Throw("Oh,...sh...")
+		},
+		Catch: func(e Exception) {
+			fmt.Printf("Caught %v\n", e)
+		},
+		Finally: func() {
+			fmt.Println("Finally...")
+		},
+	}.Do()
+	fmt.Println("We went on")
+}
+
+
+
+
+##################
+
+package main
+
+import (
+	"fmt"
+	"reflect"
+	"runtime/debug"
+)
+
+func main() {
+	add := func(a, b int) int {
+		return a + b
+	}
+
+	subtract := func(a, b int) int {
+		return a - b
+	}
+
+	multiply := func(a, b int) int {
+		return a * b
+	}
+
+	div := func(a, b int) int {
+		return a / b
+	}
+
+	add = WrapWithTryCatch(add).(func(int, int) int)
+	subtract = WrapWithTryCatch(subtract).(func(int, int) int)
+	multiply = WrapWithTryCatch(multiply).(func(int, int) int)
+	div = WrapWithTryCatch(div).(func(int, int) int)
+
+	fmt.Println(add(4, 2))      // prints 6
+	fmt.Println(subtract(4, 2)) // prints 2
+	fmt.Println(multiply(4, 2)) // prints 8
+	fmt.Println(div(4, 2))      // prints 2
+
+	// divide by zero error
+	fmt.Println(div(4, 0)) // prints "caught error: divide by zero"
+}
+
+func WrapWithTryCatch(f interface{}) interface{} {
+	return reflect.MakeFunc(reflect.TypeOf(f), func(args []reflect.Value) []reflect.Value {
+		defer func() {
+			if panicInfo := recover(); panicInfo != nil {
+				fmt.Printf("caught error: %v, %s\n", panicInfo, string(debug.Stack()))
+			}
+		}()
+
+		return reflect.ValueOf(f).Call(args)
+	}).Interface()
+}
+
+#########################
+https://blog.logrocket.com/error-handling-golang-best-practices/
+
+
+
+############
+package main
+
+import (
+	"errors"
+	"fmt"
+)
+
+func saveEarth() (err error) {
+
+	defer func() {
+		if r := recover(); r != nil {
+			err = r.(error)
+		}
+	}()
+	TooLate()
+	return
+}
+func TooLate() {
+	A()
+	panic(errors.New("Then there's nothing we can do"))
+}
+
+func A() {
+	defer fmt.Println("If it's more than 100 degrees...")
+}
+func main() {
+	err := saveEarth()
+	fmt.Printf("%+v", err)
+	//fmt.Println(err)
+}
+
+
+###################
+// https://blog.logrocket.com/error-handling-golang-best-practices/
+// https://go.dev/play/
+package main
+
+import (
+	"fmt"
+)
+
+func divide(x, y int) (res int, err error) {
+
+	defer func() {
+		if r := recover(); r != nil {
+			err = r.(error)
+		}
+	}()
+
+	return x / y, nil
+}
+
+func main() {
+	res, err := divide(4, 0)
+	fmt.Printf("%d, %+v", res, err)
+	//fmt.Println(err)
+}
+//0, runtime error: integer divide by zero
+if passed - return: res, nil
+################
+
+return a value from the recover()
+
+https://golangbyexample.com/return-value-function-panic-recover-go/
+
+
+
+package main
+import (
+    "fmt"
+)
+func main() {
+    a := []int{5, 6}
+    val, err := checkAndGet(a, 2)
+    fmt.Printf("Val: %d\n", val)
+    fmt.Println("Error: ", err)
+}
+func checkAndGet(a []int, index int) (value int, err error) {
+    value = 10
+    defer handleOutOfBounds()
+    if index > (len(a) - 1) {
+        panic("Out of bound access for slice")
+    }
+    value = a[index]
+    return value, nil
+}
+func handleOutOfBounds() {
+    if r := recover(); r != nil {
+        fmt.Println("Recovering from panic:", r)
+    }
+}
+
+///////////////////////////
+https://bitfieldconsulting.com/golang/wrapping-errors
+
+var ErrRateLimit = errors.New("rate limit")
+
+func Request(URL string) error {
+    resp, err := http.Get(URL)
+    if err != nil {
+        return err
+    }
+    defer resp.Body.Close()
+    if resp.StatusCode == http.StatusTooManyRequests {
+        return ErrRateLimit
+    }
+    return nil
+}
+
+/////////////////////
+https://golangbot.com/error-wrapping/
+
+package main
+
+import (
+	"errors"
+	"fmt"
+)
+
+var noRows = errors.New("no rows found")
+
+func getRecord() error {
+	return noRows
+}
+
+func webService() error {
+	if err := getRecord(); err != nil {
+		return fmt.Errorf("Error %w when calling DB", err)
+	}
+	return nil
+}
+
+func main() {
+	if err := webService(); err != nil {
+		if errors.Is(err, noRows) {
+			fmt.Printf("The searched record cannot be found. Error returned from DB is %s", err)
+			return
+		}
+		fmt.Println("unknown error when searching record")
+		return
+
+	}
+	fmt.Println("webservice call successful")
+
+}
+
+//////////////////////
+
+
+https://nsq.io/overview/performance.html
+https://docs.nats.io/nats-concepts/service_infrastructure/adaptive_edge_deployment
+https://shijuvar.medium.com/introducing-nats-to-go-developers-3cfcb98c21d0
+
+
+/////////
+
+package main
+
+import (
+	"crypto/sha256"
+	"encoding/hex"
+	"fmt"
+	"time"
+)
+
+// Block represents a single block in the blockchain.
+type Block struct {
+	Index     int
+	Timestamp time.Time
+	Data      string
+	PrevHash  string
+	Hash      string
+}
+
+// NewBlock creates a new block in the blockchain.
+func NewBlock(index int, data string, prevHash string) *Block {
+	block := &Block{
+		Index:     index,
+		Timestamp: time.Now(),
+		Data:      data,
+		PrevHash:  prevHash,
+	}
+
+	// Compute the hash of the block.
+	block.Hash = computeHash(block)
+
+	return block
+}
+
+// Blockchain represents a collection of blocks in the blockchain.
+type Blockchain struct {
+	Blocks []*Block
+}
+
+// NewBlockchain creates a new blockchain with a genesis block.
+func NewBlockchain() *Blockchain {
+	genesisBlock := NewBlock(0, "Genesis Block", "")
+	blockchain := &Blockchain{
+		Blocks: []*Block{genesisBlock},
+	}
+	return blockchain
+}
+
+// AddBlock adds a new block to the blockchain.
+func (chain *Blockchain) AddBlock(data string) {
+	prevBlock := chain.Blocks[len(chain.Blocks)-1]
+	newBlock := NewBlock(prevBlock.Index+1, data, prevBlock.Hash)
+	chain.Blocks = append(chain.Blocks, newBlock)
+}
+
+// computeHash computes the SHA256 hash of the input block.
+func computeHash(block *Block) string {
+	hasher := sha256.New()
+	hasher.Write([]byte(fmt.Sprintf("%d%s%s%s", block.Index, block.Timestamp, block.Data, block.PrevHash)))
+	hash := hasher.Sum(nil)
+	return hex.EncodeToString(hash)
+}
+
+func main() {
+	// Create a new blockchain.
+	blockchain := NewBlockchain()
+
+	// Add some blocks to the blockchain.
+	blockchain.AddBlock("Block 1")
+	blockchain.AddBlock("Block 2")
+	blockchain.AddBlock("Block 3")
+
+	// Print out the blocks in the blockchain.
+	for _, block := range blockchain.Blocks {
+		fmt.Printf("Index: %d\n", block.Index)
+		fmt.Printf("Timestamp: %s\n", block.Timestamp)
+		fmt.Printf("Data: %s\n", block.Data)
+		fmt.Printf("PrevHash: %s\n", block.PrevHash)
+		fmt.Printf("Hash: %s\n", block.Hash)
+		fmt.Println()
+	}
+}
+
+
+///////////////////
+
+Running tool: /usr/bin/go test -benchmem -run=^$ -bench ^BenchmarkHashChainVerification$ xcoin.com/m/test
+
+package main
+
+import (
+	"crypto/rand"
+	"crypto/sha256"
+	"encoding/hex"
+	"fmt"
+	"testing"
+)
+
+func BenchmarkHashChainVerification(b *testing.B) {
+	// Generate a hash chain with a billion records.
+	recordCount := 1000000000
+	records := make([]string, recordCount)
+	record := make([]byte, 32)
+	rand.Read(record)
+	records[0] = hex.EncodeToString(record)
+	for i := 1; i < recordCount; i++ {
+		prevRecord := records[i-1]
+		recordHash := computeHash(prevRecord)
+		records[i] = recordHash
+	}
+
+	// Select the latest record hash to verify.
+	latestRecord := records[len(records)-1]
+
+	b.ResetTimer()
+
+	// Verify the latest record hash for each iteration of the benchmark.
+	for i := 0; i < b.N; i++ {
+		// Traverse the hash chain from the latest record up to the first record.
+		currentRecord := latestRecord
+		for i := len(records) - 1; i > 0; i-- {
+			prevRecord := records[i-1]
+			if computeHash(currentRecord) != prevRecord {
+				panic(fmt.Sprintf("computed hash (%s) does not match expected hash (%s)", computeHash(currentRecord), prevRecord))
+			}
+			currentRecord = prevRecord
+		}
+
+		// Check if the first record hash matches the expected hash.
+		if computeHash(currentRecord) != records[0] {
+			panic(fmt.Sprintf("computed hash (%s) does not match expected hash (%s)", computeHash(currentRecord), records[0]))
+		}
+	}
+}
+
+// computeHash computes the SHA256 hash of the input string.
+func computeHash(input string) string {
+	hasher := sha256.New()
+	hasher.Write([]byte(input))
+	hash := hasher.Sum(nil)
+	return hex.EncodeToString(hash)
+}
+
+go test -bench=. -benchtime=10s
+ /usr/bin/go test -benchmem -run=^$ -bench ^BenchmarkHashChainVerification$ xcoin.com/m/test -benchtime=10s
+ 
+ /usr/bin/go test -timeout 30s -run ^TestBTreeSearch$ xcoin.com/m/test
+ 
+ 
+ 
+ 
+///////////////////
+
+
+
+package main
+
+import (
+	"crypto/rand"
+	"crypto/sha256"
+	"encoding/hex"
+	"fmt"
+	"testing"
+)
+
+const degree = 3
+
+type Node struct {
+	keys     []string
+	children []*Node
+	leaf     bool
+}
+
+func NewNode() *Node {
+	return &Node{
+		keys:     make([]string, degree*2-1),
+		children: make([]*Node, degree*2),
+		leaf:     true,
+	}
+}
+
+type BTree struct {
+	root *Node
+}
+
+func NewBTree() *BTree {
+	return &BTree{
+		root: NewNode(),
+	}
+}
+
+func (b *BTree) Search(key string) bool {
+	return search(b.root, key)
+}
+
+func search(node *Node, key string) bool {
+	if node == nil {
+		return false
+	}
+	for i, k := range node.keys {
+		if key == k {
+			return true
+		}
+		if key < k || k == "" {
+			return search(node.children[i], key)
+		}
+	}
+	return search(node.children[len(node.children)-1], key)
+}
+
+func generateHash() string {
+	record := make([]byte, 32)
+	rand.Read(record)
+	hash := sha256.Sum256(record)
+	return hex.EncodeToString(hash[:])
+}
+
+func BenchmarkBTreeSearch(b *testing.B) {
+	// Create a new B-tree and add some keys to it.
+	tree := NewBTree()
+	for i := 0; i < 1000000; i++ {
+		key := generateHash()
+		tree.root.keys[i] = key
+	}
+
+	// Benchmark the search operation.
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		key := tree.root.keys[i%1000000]
+		tree.Search(key)
+	}
+}
+
+func main() {
+	// Create a new B-tree and add some keys to it.
+	tree := NewBTree()
+	for i := 0; i < 10; i++ {
+		key := generateHash()
+		tree.root.keys[i] = key
+	}
+
+	// Search for a key in the B-tree.
+	key := tree.root.keys[5]
+	if tree.Search(key) {
+		fmt.Printf("Key %s found in B-tree.\n", key)
+	} else {
+		fmt.Printf("Key %s not found in B-tree.\n", key)
+	}
+
+	// Output the B-tree structure.
+	fmt.Printf("%+v\n", tree)
+}
+
+
+
+#######################
+package main
+
+import (
+	"crypto/sha256"
+	"math/big"
+	"testing"
+)
+
+func TestHashToNumberConversion(t *testing.T) {
+	// Hash some data with SHA-256.
+	data := []byte("hello, world!")
+	hash := sha256.Sum256(data)
+
+	// Convert the hash to a big integer.
+	bigInt := new(big.Int).SetBytes(hash[:])
+
+	// Get the integer value.
+	intVal := bigInt.Uint64()
+
+	// Check that the result is correct.
+	expected := uint64(6357064107726272296)
+	if intVal != expected {
+		t.Errorf("Expected %d, but got %d", expected, intVal)
+	}
+}
+
+
+package main
+
+import (
+	"crypto/sha256"
+	"fmt"
+	"math/big"
+)
+
+func main() {
+	// Create some example strings.
+	str1 := "hello, world!"
+	str2 := "goodbye, world!"
+
+	// Hash the strings using SHA-256.
+	hash1 := sha256.Sum256([]byte(str1))
+	hash2 := sha256.Sum256([]byte(str2))
+
+	// Convert the hashes to big integers.
+	int1 := new(big.Int).SetBytes(hash1[:])
+	int2 := new(big.Int).SetBytes(hash2[:])
+
+	// Compare the integer values for collisions.
+	if int1.Cmp(int2) == 0 {
+		fmt.Println("Hash collision detected!")
+	} else {
+		fmt.Println("No hash collision detected.")
+	}
+}
+
+/////////////////////////
+
+
+// Define a struct to represent the data.
+type MyData struct {
+    ID   int
+    Name string
+}
+
+// Define a function to insert new data into the database.
+func insertData(db *sql.DB, data MyData) error {
+    // Set the transaction isolation level to serializable.
+    tx, err := db.BeginTx(context.Background(), &sql.TxOptions{Isolation: sql.LevelSerializable})
+    if err != nil {
+        return err
+    }
+    defer tx.Rollback()
+
+    // Attempt to insert the new record.
+    _, err = tx.Exec("INSERT INTO my_table (id, name) VALUES ($1, $2)", data.ID, data.Name)
+    if err != nil {
+        // Check for a violation of the unique constraint or index.
+        if strings.Contains(err.Error(), "violates unique constraint") {
+            return fmt.Errorf("record with ID %d already exists or has been deleted", data.ID)
+        }
+        return err
+    }
+
+    // Commit the transaction.
+    err = tx.Commit()
+    if err != nil {
+        return err
+    }
+
+    return nil
+}
+///////////////////////
+https://docs.celo.org/developer/migrate/from-ethereum
+
+Mnemonic: trash comic normal rescue pottery swear shell annual husband artist animal swing among spoon rack indicate middle rain plunge net fault reopen ramp onion
+2023/03/08 12:08:08 Created directory for address: a89933ca4c5919c2f2bd70aca65e3c8bb124aa9afce6db27d2695131db3f1a07
+
+Mnemonic: stand gadget globe teach casino agree dream betray expand spoon purse online rare isolate fix gift goddess mango remind crash anchor hour pepper card
+2023/03/08 12:08:51 Created directory for address: 7013a1411f5c2b422685380107ff03784536fff2bbaafad4c7f6a5a52cf60d75
+
+
+Mnemonic: spring jacket puppy maid corn setup memory young input click wish child toward private fame arrive major steak limit transfer spring snap tonight sleep
+2023/03/08 12:09:39 Created directory for address: 352068c9760a6deb2af52fd35f877b8df89f275d6fb27f1dd91d45dd8241e29e
+
+Mnemonic: afraid question light follow host ring riot plate crane cliff jelly insane wedding twice recycle rebel fiber amazing actual aunt tomato frozen cross perfect
+2023/03/08 12:09:46 Created directory for address: 85f408997e3165bc2f432528afbc5d51ea291f03ca57b6d9951101b7b6136717
+
+Mnemonic: favorite census dial bacon undo sail organ narrow movie evil tray enact olive poverty fix oblige sea unique nurse electric march rely project ranch
+2023/03/08 12:10:04 Created directory for address: edcbc3e3a60eebc7d9962d1c3800156b61c52e8ab943eafa36b27c11fe17cf4a
+
+
+https://askubuntu.com/questions/244668/trying-to-use-free-space-on-bootable-usb
+https://askubuntu.com/questions/1284791/how-to-create-a-multi-partition-usb-drive-that-also-acts-as-the-bootable-ubuntu #different menu/os from usb-drive-that-also-acts-as-the-bootable-ubuntu
+
+https://shijuvar.medium.com/introducing-nats-to-go-developers-3cfcb98c21d0
+https://nsq.io/overview/performance.html
+https://docs.nats.io/nats-concepts/service_infrastructure/adaptive_edge_deployment
+https://nsq.io/deployment/topology_patterns.html
+
+
+https://github.com/spadesk1991/vscde-go-swagger ? plugin
+
+
+
+
+////
+
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+type Address struct {
+	Street   string
+	City     string
+	State    string
+	ZipCode  string
+	Country  string
+}
+
+type Person struct {
+	Name    string
+	Age     int
+	Address Address
+}
+
+type Company struct {
+	Name      string
+	Location  Address
+	Employees []Person
+}
+
+func main() {
+	// Example JSON-encoded byte slice with a Person object
+	data1 := []byte(`{
+		"name": "John Doe",
+		"age": 30,
+		"address": {
+			"street": "123 Main St",
+			"city": "Anytown",
+			"state": "CA",
+			"zipcode": "12345",
+			"country": "USA"
+		}
+	}`)
+
+	// Example JSON-encoded byte slice with a Company object
+	data2 := []byte(`{
+		"name": "Acme Inc",
+		"location": {
+			"street": "456 Market St",
+			"city": "Anytown",
+			"state": "CA",
+			"zipcode": "12345",
+			"country": "USA"
+		},
+		"employees": [
+			{
+				"name": "John Doe",
+				"age": 30,
+				"address": {
+					"street": "123 Main St",
+					"city": "Anytown",
+					"state": "CA",
+					"zipcode": "12345",
+					"country": "USA"
+				}
+			},
+			{
+				"name": "Jane Doe",
+				"age": 25,
+				"address": {
+					"street": "789 Market St",
+					"city": "Othertown",
+					"state": "CA",
+					"zipcode": "67890",
+					"country": "USA"
+				}
+			}
+		]
+	}`)
+
+	// Define a slice of possible object types
+	types := []interface{}{&Person{}, &Company{}}
+
+	// Iterate over the possible object types and try to unmarshal the JSON data into each type
+	for _, objType := range types {
+		err := json.Unmarshal(data2, objType)
+		if err == nil {
+			// The JSON data was successfully unmarshalled into this type
+			switch objType.(type) {
+			case *Person:
+				fmt.Println("The JSON data corresponds to a Person object")
+				person := objType.(*Person)
+				// Use the Person object
+				fmt.Printf("Person Name: %s\n", person.Name)
+				fmt.Printf("Person Age: %d\n", person.Age)
+				fmt.Printf("Person Address: %v\n", person.Address)
+				return
+			case *Company:
+				fmt.Println("The JSON data corresponds to a Company object")
+				company := objType.(*Company)
+				// Use the Company object
+				fmt.Printf("Company Name: %s\n", company.Name)
+				fmt.Printf("Company Location: %v\n", company.Location)
+				for _, employee := range company.Employees {
+					fmt.Printf("Employee Name: %s\n", employee.Name)
+					fmt.Printf("Employee Age: %d\n", employee.Age)
+					fmt.Printf("Employee Address: %v\n", employee.Address)
+				}
+				return
+			}
+		}
+	}
+}
+///////////////////
+
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+type Person struct {
+	Name string
+	Age  int
+}
+
+func main() {
+	// Get the type of the Person struct using reflection
+	personType := reflect.TypeOf(Person{})
+
+	// Instantiate a new Person object from the type using reflection
+	personValue := reflect.New(personType).Elem()
+	personValue.FieldByName("Name").SetString("Alice")
+	personValue.FieldByName("Age").SetInt(30)
+	person := personValue.Interface().(Person)
+
+	// Print the instantiated object
+	fmt.Printf("Person object: %v\n", person) //Person object: {Alice 30}
+
+}
+
+Next, we use the reflect.New function to create a new zero-initialized value of the Person type, and then use the Elem method to obtain a reflect.Value object that represents the underlying value. We then use the FieldByName method to set the values of the Name and Age fields to "Alice" and 30, respectively.
+
+Finally, we use the reflect.Value.Interface method to obtain the instantiated object as an interface{}, and then use a type assertion to cast it to the Person type. We then print the resulting Person object using the fmt.Printf function.
+
+
+
+
+////////////////
+
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"time"
+)
+
+func main() {
+	nodes := []string{
+		"https://node1.example.com",
+		"https://node2.example.com",
+		"https://node3.example.com",
+	}
+
+	results := make(map[string]time.Duration)
+
+	for _, node := range nodes {
+		startTime := time.Now()
+		resp, err := http.Get(node)
+		if err != nil {
+			fmt.Println("Error:", err)
+			continue
+		}
+		resp.Body.Close()
+		endTime := time.Now()
+		duration := endTime.Sub(startTime)
+		results[node] = duration
+		fmt.Println(node, duration)
+	}
+
+	fastestNode := ""
+	fastestDuration := time.Duration(0)
+	for node, duration := range results {
+		if fastestDuration == 0 || duration < fastestDuration {
+			fastestNode = node
+			fastestDuration = duration
+		}
+	}
+
+	fmt.Println("Fastest node:", fastestNode, fastestDuration)
+}
+
+//////////////////

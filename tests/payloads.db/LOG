@@ -1,0 +1,942 @@
+=============== Mar 2, 2023 (IST) ===============
+17:57:03.328993 version@stat F·[8 7143 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:03.373924 db@janitor F·9579 G·0
+17:57:03.373974 db@open done T·76.893874ms
+17:57:03.374059 table@move L0@28734 -> L1
+17:57:03.374634 version@stat F·[7 7144 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.375343 db@close closing
+17:57:03.376478 table-move@commit exiting
+17:57:03.376537 db@write was delayed N·1 T·1.276119ms
+17:57:03.376575 db@close done T·1.235524ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:03.377027 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:03.410630 version@stat F·[7 7144 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.410695 db@open opening
+17:57:03.429222 journal@recovery F·1
+17:57:03.429954 journal@recovery recovering @28735
+17:57:03.431207 memdb@flush created L0@28737 N·1 S·184B "202..532,v19155":"202..532,v19155"
+17:57:03.431816 version@stat F·[8 7144 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:03.459644 db@janitor F·9580 G·0
+17:57:03.459673 db@open done T·48.966008ms
+17:57:03.459719 table@move L0@28737 -> L1
+17:57:03.460069 version@stat F·[7 7145 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.460813 db@close closing
+17:57:03.462953 table-move@commit exiting
+17:57:03.463001 db@write was delayed N·1 T·1.063997ms
+17:57:03.463045 db@close done T·2.233309ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:03.463299 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:03.484146 version@stat F·[7 7145 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.484211 db@open opening
+17:57:03.511729 journal@recovery F·1
+17:57:03.512903 journal@recovery recovering @28738
+17:57:03.515292 memdb@flush created L0@28740 N·1 S·184B "202..403,v19157":"202..403,v19157"
+17:57:03.516386 version@stat F·[8 7145 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:03.569779 db@janitor F·9581 G·0
+17:57:03.569836 db@open done T·85.613382ms
+17:57:03.569921 table@move L0@28740 -> L1
+17:57:03.570531 version@stat F·[7 7146 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.571394 db@close closing
+17:57:03.572438 table-move@commit exiting
+17:57:03.572497 db@write was delayed N·1 T·1.455517ms
+17:57:03.572547 db@close done T·1.158812ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:03.572949 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:03.606724 version@stat F·[7 7146 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.606790 db@open opening
+17:57:03.625750 journal@recovery F·1
+17:57:03.626698 journal@recovery recovering @28741
+17:57:03.627861 memdb@flush created L0@28743 N·1 S·184B "202..069,v19159":"202..069,v19159"
+17:57:03.628399 version@stat F·[8 7146 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:03.655637 db@janitor F·9582 G·0
+17:57:03.655670 db@open done T·48.867685ms
+17:57:03.655737 table@move L0@28743 -> L1
+17:57:03.656146 version@stat F·[7 7147 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.656857 db@close closing
+17:57:03.657947 table-move@commit exiting
+17:57:03.657982 db@write was delayed N·1 T·1.122873ms
+17:57:03.658010 db@close done T·1.155066ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:03.658328 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:03.688783 version@stat F·[7 7147 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.688856 db@open opening
+17:57:03.717597 journal@recovery F·1
+17:57:03.718592 journal@recovery recovering @28744
+17:57:03.720388 memdb@flush created L0@28746 N·1 S·184B "202..604,v19161":"202..604,v19161"
+17:57:03.721211 version@stat F·[8 7147 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:03.766888 db@janitor F·9583 G·0
+17:57:03.766942 db@open done T·78.072671ms
+17:57:03.767009 table@move L0@28746 -> L1
+17:57:03.767521 version@stat F·[7 7148 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.768180 db@close closing
+17:57:03.769292 table-move@commit exiting
+17:57:03.769357 db@write was delayed N·1 T·1.147535ms
+17:57:03.769406 db@close done T·1.23073ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:03.769773 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:03.802790 version@stat F·[7 7148 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.802856 db@open opening
+17:57:03.829983 journal@recovery F·1
+17:57:03.830952 journal@recovery recovering @28747
+17:57:03.832393 memdb@flush created L0@28749 N·1 S·184B "202..050,v19163":"202..050,v19163"
+17:57:03.833196 version@stat F·[8 7148 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:03.879468 db@janitor F·9584 G·0
+17:57:03.879515 db@open done T·76.64763ms
+17:57:03.879597 table@move L0@28749 -> L1
+17:57:03.880147 version@stat F·[7 7149 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.880730 db@close closing
+17:57:03.881981 table-move@commit exiting
+17:57:03.882050 db@write was delayed N·1 T·1.104372ms
+17:57:03.882116 db@close done T·1.411455ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:03.882584 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:03.916433 version@stat F·[7 7149 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.916511 db@open opening
+17:57:03.934372 journal@recovery F·1
+17:57:03.935076 journal@recovery recovering @28750
+17:57:03.936207 memdb@flush created L0@28752 N·1 S·184B "202..951,v19165":"202..951,v19165"
+17:57:03.936723 version@stat F·[8 7149 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:03.966534 db@janitor F·9585 G·0
+17:57:03.966566 db@open done T·50.040319ms
+17:57:03.966620 table@move L0@28752 -> L1
+17:57:03.967024 version@stat F·[7 7150 2426] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.967902 table@move L1@7291 -> L2
+17:57:03.967969 db@close closing
+17:57:03.968222 version@stat F·[7 7149 2427] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.969038 table-move@commit exiting
+17:57:03.969068 db@write was delayed N·1 T·1.338489ms
+17:57:03.969101 db@close done T·1.135985ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:03.969393 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:03.991479 version@stat F·[7 7149 2427] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:03.991526 db@open opening
+17:57:04.014400 journal@recovery F·1
+17:57:04.015776 journal@recovery recovering @28753
+17:57:04.017243 memdb@flush created L0@28755 N·1 S·184B "202..309,v19167":"202..309,v19167"
+17:57:04.018693 version@stat F·[8 7149 2427] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.066365 db@janitor F·9586 G·0
+17:57:04.066416 db@open done T·74.879539ms
+17:57:04.066503 table@move L0@28755 -> L1
+17:57:04.067079 version@stat F·[7 7150 2427] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.067698 db@close closing
+17:57:04.068949 table-move@commit exiting
+17:57:04.069007 db@write was delayed N·1 T·1.184284ms
+17:57:04.069050 db@close done T·1.353215ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.069509 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.100871 version@stat F·[7 7150 2427] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.100950 db@open opening
+17:57:04.119297 journal@recovery F·1
+17:57:04.119989 journal@recovery recovering @28756
+17:57:04.121104 memdb@flush created L0@28758 N·1 S·184B "202..960,v19169":"202..960,v19169"
+17:57:04.121673 version@stat F·[8 7150 2427] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.147895 db@janitor F·9587 G·0
+17:57:04.147925 db@open done T·46.961662ms
+17:57:04.147976 table@move L0@28758 -> L1
+17:57:04.148339 version@stat F·[7 7151 2427] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.149307 table@move L1@7294 -> L2
+17:57:04.149377 db@close closing
+17:57:04.149632 version@stat F·[7 7150 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.150514 table-move@commit exiting
+17:57:04.150548 db@write was delayed N·1 T·1.388843ms
+17:57:04.150577 db@close done T·1.20302ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.150835 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.178249 version@stat F·[7 7150 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.178313 db@open opening
+17:57:04.205438 journal@recovery F·1
+17:57:04.206529 journal@recovery recovering @28759
+17:57:04.207936 memdb@flush created L0@28761 N·1 S·184B "202..577,v19171":"202..577,v19171"
+17:57:04.208811 version@stat F·[8 7150 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.255972 db@janitor F·9588 G·0
+17:57:04.256020 db@open done T·77.694948ms
+17:57:04.256092 table@move L0@28761 -> L1
+17:57:04.256621 version@stat F·[7 7151 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.257223 db@close closing
+17:57:04.258964 table-move@commit exiting
+17:57:04.259038 db@write was delayed N·1 T·1.111708ms
+17:57:04.259092 db@close done T·1.871853ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.259577 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.293882 version@stat F·[7 7151 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.293953 db@open opening
+17:57:04.312041 journal@recovery F·1
+17:57:04.312842 journal@recovery recovering @28762
+17:57:04.314007 memdb@flush created L0@28764 N·1 S·184B "202..066,v19173":"202..066,v19173"
+17:57:04.314550 version@stat F·[8 7151 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.340404 db@janitor F·9589 G·0
+17:57:04.340438 db@open done T·46.470085ms
+17:57:04.340503 table@move L0@28764 -> L1
+17:57:04.340881 version@stat F·[7 7152 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.341700 db@close closing
+17:57:04.342669 table-move@commit exiting
+17:57:04.342711 db@write was delayed N·1 T·1.198582ms
+17:57:04.342752 db@close done T·1.052911ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.343040 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.368153 version@stat F·[7 7152 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.368206 db@open opening
+17:57:04.386319 journal@recovery F·1
+17:57:04.387040 journal@recovery recovering @28765
+17:57:04.388148 memdb@flush created L0@28767 N·1 S·184B "202..895,v19175":"202..895,v19175"
+17:57:04.388859 version@stat F·[8 7152 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.416583 db@janitor F·9590 G·0
+17:57:04.416622 db@open done T·48.405805ms
+17:57:04.416710 table@move L0@28767 -> L1
+17:57:04.417153 version@stat F·[7 7153 2428] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.418170 table@move L1@7297 -> L2
+17:57:04.418241 db@close closing
+17:57:04.418547 version@stat F·[7 7152 2429] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.419419 table-move@commit exiting
+17:57:04.419452 db@write was delayed N·1 T·1.54669ms
+17:57:04.419486 db@close done T·1.245821ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.419777 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.449057 version@stat F·[7 7152 2429] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.449142 db@open opening
+17:57:04.476967 journal@recovery F·1
+17:57:04.478101 journal@recovery recovering @28768
+17:57:04.479928 memdb@flush created L0@28770 N·1 S·184B "202..937,v19177":"202..937,v19177"
+17:57:04.480905 version@stat F·[8 7152 2429] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.527287 db@janitor F·9591 G·0
+17:57:04.527336 db@open done T·78.180754ms
+17:57:04.527409 table@move L0@28770 -> L1
+17:57:04.527999 version@stat F·[7 7153 2429] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.528752 db@close closing
+17:57:04.530159 table-move@commit exiting
+17:57:04.530217 db@write was delayed N·1 T·1.315092ms
+17:57:04.530266 db@close done T·1.516766ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.530695 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.561455 version@stat F·[7 7153 2429] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.561518 db@open opening
+17:57:04.580652 journal@recovery F·1
+17:57:04.581315 journal@recovery recovering @28771
+17:57:04.583027 memdb@flush created L0@28773 N·1 S·184B "202..767,v19179":"202..767,v19179"
+17:57:04.583697 version@stat F·[8 7153 2429] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.609166 db@janitor F·9592 G·0
+17:57:04.609195 db@open done T·47.665922ms
+17:57:04.609256 table@move L0@28773 -> L1
+17:57:04.609590 version@stat F·[7 7154 2429] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.610558 table@move L1@7300 -> L2
+17:57:04.610614 db@close closing
+17:57:04.610892 version@stat F·[7 7153 2430] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.611703 table-move@commit exiting
+17:57:04.611737 db@write was delayed N·1 T·1.36824ms
+17:57:04.611770 db@close done T·1.157365ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.612006 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.628210 version@stat F·[7 7153 2430] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.628243 db@open opening
+17:57:04.642133 journal@recovery F·1
+17:57:04.642795 journal@recovery recovering @28774
+17:57:04.643893 memdb@flush created L0@28776 N·1 S·184B "202..046,v19181":"202..046,v19181"
+17:57:04.644414 version@stat F·[8 7153 2430] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.669623 db@janitor F·9593 G·0
+17:57:04.669650 db@open done T·41.399854ms
+17:57:04.669689 table@move L0@28776 -> L1
+17:57:04.669978 version@stat F·[7 7154 2430] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.670892 table@move L1@7303 -> L2
+17:57:04.670951 db@close closing
+17:57:04.671143 version@stat F·[7 7153 2431] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.671995 table-move@commit exiting
+17:57:04.672028 db@write was delayed N·1 T·1.254117ms
+17:57:04.672062 db@close done T·1.105853ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.672310 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.688006 version@stat F·[7 7153 2431] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.688041 db@open opening
+17:57:04.701650 journal@recovery F·1
+17:57:04.702304 journal@recovery recovering @28777
+17:57:04.703420 memdb@flush created L0@28779 N·1 S·184B "202..267,v19183":"202..267,v19183"
+17:57:04.703963 version@stat F·[8 7153 2431] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.92 0.07]
+17:57:04.731728 db@janitor F·9594 G·0
+17:57:04.731766 db@open done T·43.717121ms
+17:57:04.731837 table@move L0@28779 -> L1
+17:57:04.732265 version@stat F·[7 7154 2431] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.92 0.07]
+17:57:04.733243 table@move L1@7306 -> L2
+17:57:04.733372 db@close closing
+17:57:04.733691 version@stat F·[7 7153 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:04.734629 table-move@commit exiting
+17:57:04.734671 db@write was delayed N·1 T·1.545249ms
+17:57:04.734720 db@close done T·1.348107ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.735038 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.761251 version@stat F·[7 7153 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:04.761312 db@open opening
+17:57:04.777565 journal@recovery F·1
+17:57:04.778184 journal@recovery recovering @28780
+17:57:04.779263 memdb@flush created L0@28782 N·1 S·184B "202..270,v19185":"202..270,v19185"
+17:57:04.779929 version@stat F·[8 7153 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+17:57:04.811335 db@janitor F·9595 G·0
+17:57:04.811378 db@open done T·50.054358ms
+17:57:04.811449 table@move L0@28782 -> L1
+17:57:04.811956 version@stat F·[7 7154 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:04.813267 db@close closing
+17:57:04.815181 table-move@commit exiting
+17:57:04.815232 db@write was delayed N·1 T·1.812022ms
+17:57:04.815275 db@close done T·2.008909ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.815664 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.847685 version@stat F·[7 7154 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:04.847766 db@open opening
+17:57:04.864465 journal@recovery F·1
+17:57:04.865132 journal@recovery recovering @28783
+17:57:04.866283 memdb@flush created L0@28785 N·1 S·184B "202..399,v19187":"202..399,v19187"
+17:57:04.866854 version@stat F·[8 7154 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+17:57:04.894045 db@janitor F·9596 G·0
+17:57:04.894080 db@open done T·46.29672ms
+17:57:04.894146 table@move L0@28785 -> L1
+17:57:04.894560 version@stat F·[7 7155 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:04.895297 db@close closing
+17:57:04.896217 table-move@commit exiting
+17:57:04.896261 db@write was delayed N·1 T·1.153161ms
+17:57:04.896301 db@close done T·1.004677ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.896575 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.921604 version@stat F·[7 7155 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:04.921671 db@open opening
+17:57:04.937463 journal@recovery F·1
+17:57:04.938221 journal@recovery recovering @28786
+17:57:04.939403 memdb@flush created L0@28788 N·1 S·184B "202..320,v19189":"202..320,v19189"
+17:57:04.940120 version@stat F·[8 7155 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+17:57:04.966191 db@janitor F·9597 G·0
+17:57:04.966217 db@open done T·44.534682ms
+17:57:04.966257 table@move L0@28788 -> L1
+17:57:04.966559 version@stat F·[7 7156 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:04.967491 db@close closing
+17:57:04.969169 table-move@commit exiting
+17:57:04.969193 db@write was delayed N·1 T·1.224407ms
+17:57:04.969214 db@close done T·1.725249ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:04.969412 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:04.985634 version@stat F·[7 7156 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:04.985670 db@open opening
+17:57:04.999485 journal@recovery F·1
+17:57:05.000201 journal@recovery recovering @28789
+17:57:05.002369 memdb@flush created L0@28791 N·1 S·184B "202..931,v19191":"202..931,v19191"
+17:57:05.002931 version@stat F·[8 7156 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+17:57:05.028242 db@janitor F·9598 G·0
+17:57:05.028268 db@open done T·42.591844ms
+17:57:05.028306 table@move L0@28791 -> L1
+17:57:05.028601 version@stat F·[7 7157 2432] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.029468 table@move L1@7309 -> L2
+17:57:05.029537 db@close closing
+17:57:05.029725 version@stat F·[7 7156 2433] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.030545 table-move@commit exiting
+17:57:05.030582 db@write was delayed N·1 T·1.222985ms
+17:57:05.030614 db@close done T·1.078776ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:05.030822 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:05.049686 version@stat F·[7 7156 2433] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.049736 db@open opening
+17:57:05.065793 journal@recovery F·1
+17:57:05.066686 journal@recovery recovering @28792
+17:57:05.068235 memdb@flush created L0@28794 N·1 S·184B "202..572,v19193":"202..572,v19193"
+17:57:05.068813 version@stat F·[8 7156 2433] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+17:57:05.092702 db@janitor F·9599 G·0
+17:57:05.092729 db@open done T·42.982883ms
+17:57:05.092771 table@move L0@28794 -> L1
+17:57:05.093066 version@stat F·[7 7157 2433] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.093959 table@move L1@7312 -> L2
+17:57:05.094023 db@close closing
+17:57:05.094227 version@stat F·[7 7156 2434] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.095039 table-move@commit exiting
+17:57:05.095061 db@write was delayed N·1 T·1.240153ms
+17:57:05.095093 db@close done T·1.070909ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:05.095303 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:05.115345 version@stat F·[7 7156 2434] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.115394 db@open opening
+17:57:05.141252 journal@recovery F·1
+17:57:05.142364 journal@recovery recovering @28795
+17:57:05.144082 memdb@flush created L0@28797 N·1 S·184B "202..375,v19195":"202..375,v19195"
+17:57:05.144939 version@stat F·[8 7156 2434] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+17:57:05.191831 db@janitor F·9600 G·0
+17:57:05.191881 db@open done T·76.476787ms
+17:57:05.191969 table@move L0@28797 -> L1
+17:57:05.192496 version@stat F·[7 7157 2434] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.193398 db@close closing
+17:57:05.194504 table-move@commit exiting
+17:57:05.194585 db@write was delayed N·1 T·1.397571ms
+17:57:05.194644 db@close done T·1.247482ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:05.195059 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:05.227877 version@stat F·[7 7157 2434] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.227942 db@open opening
+17:57:05.257982 journal@recovery F·1
+17:57:05.259240 journal@recovery recovering @28798
+17:57:05.261194 memdb@flush created L0@28800 N·1 S·184B "202..951,v19197":"202..951,v19197"
+17:57:05.262106 version@stat F·[8 7157 2434] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+17:57:05.293106 db@janitor F·9601 G·0
+17:57:05.293133 db@open done T·65.179537ms
+17:57:05.293176 table@move L0@28800 -> L1
+17:57:05.293493 version@stat F·[7 7158 2434] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.294457 table@move L1@7315 -> L2
+17:57:05.294523 db@close closing
+17:57:05.294734 version@stat F·[7 7157 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.295573 table-move@commit exiting
+17:57:05.295597 db@write was delayed N·1 T·1.336563ms
+17:57:05.295622 db@close done T·1.100277ms
+=============== Mar 2, 2023 (IST) ===============
+17:57:05.295846 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:57:05.316293 version@stat F·[7 7157 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.316338 db@open opening
+17:57:05.339367 journal@recovery F·1
+17:57:05.340465 journal@recovery recovering @28801
+17:57:05.341805 memdb@flush created L0@28803 N·1 S·184B "202..080,v19199":"202..080,v19199"
+17:57:05.342814 version@stat F·[8 7157 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+17:57:05.375082 db@janitor F·9602 G·0
+17:57:05.375120 db@open done T·58.772037ms
+17:57:05.375196 table@move L0@28803 -> L1
+17:57:05.375594 version@stat F·[7 7158 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+17:57:05.376873 db@close closing
+17:57:05.378094 table-move@commit exiting
+17:57:05.378160 db@write was delayed N·1 T·1.655023ms
+17:57:05.378197 db@close done T·1.327821ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.356129 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.379846 version@stat F·[7 7158 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.379968 db@open opening
+16:15:09.394895 journal@recovery F·1
+16:15:09.395295 journal@recovery recovering @28804
+16:15:09.397623 memdb@flush created L0@28806 N·1 S·184B "202..476,v19201":"202..476,v19201"
+16:15:09.397910 version@stat F·[8 7158 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.420015 db@janitor F·9603 G·0
+16:15:09.420045 db@open done T·40.067444ms
+16:15:09.420099 table@move L0@28806 -> L1
+16:15:09.420394 version@stat F·[7 7159 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.421291 db@close closing
+16:15:09.421966 table-move@commit exiting
+16:15:09.421983 db@write was delayed N·1 T·1.08786ms
+16:15:09.422003 db@close done T·715.168µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.422261 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.436850 version@stat F·[7 7159 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.436888 db@open opening
+16:15:09.448419 journal@recovery F·1
+16:15:09.449431 journal@recovery recovering @28807
+16:15:09.450899 memdb@flush created L0@28809 N·1 S·184B "202..834,v19203":"202..834,v19203"
+16:15:09.451060 version@stat F·[8 7159 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.473852 db@janitor F·9604 G·0
+16:15:09.473886 db@open done T·36.991956ms
+16:15:09.473952 table@move L0@28809 -> L1
+16:15:09.474851 version@stat F·[7 7160 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.475288 db@close closing
+16:15:09.477058 table-move@commit exiting
+16:15:09.477116 db@write was delayed N·1 T·1.124225ms
+16:15:09.477151 db@close done T·1.864191ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.477544 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.494899 version@stat F·[7 7160 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.494966 db@open opening
+16:15:09.506207 journal@recovery F·1
+16:15:09.507229 journal@recovery recovering @28810
+16:15:09.509522 memdb@flush created L0@28812 N·1 S·184B "202..942,v19205":"202..942,v19205"
+16:15:09.510484 version@stat F·[8 7160 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.531588 db@janitor F·9605 G·0
+16:15:09.531619 db@open done T·36.647014ms
+16:15:09.531663 table@move L0@28812 -> L1
+16:15:09.531986 version@stat F·[7 7161 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.532797 db@close closing
+16:15:09.533518 table-move@commit exiting
+16:15:09.533541 db@write was delayed N·1 T·1.112871ms
+16:15:09.533570 db@close done T·774.898µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.533740 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.548482 version@stat F·[7 7161 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.548517 db@open opening
+16:15:09.559429 journal@recovery F·1
+16:15:09.560148 journal@recovery recovering @28813
+16:15:09.561631 memdb@flush created L0@28815 N·1 S·184B "202..017,v19207":"202..017,v19207"
+16:15:09.563007 version@stat F·[8 7161 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.592530 db@janitor F·9606 G·0
+16:15:09.592589 db@open done T·44.064218ms
+16:15:09.592650 table@move L0@28815 -> L1
+16:15:09.593273 version@stat F·[7 7162 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.593790 db@close closing
+16:15:09.594951 table-move@commit exiting
+16:15:09.595016 db@write was delayed N·1 T·1.131683ms
+16:15:09.595058 db@close done T·1.26843ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.595392 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.614044 version@stat F·[7 7162 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.614084 db@open opening
+16:15:09.628051 journal@recovery F·1
+16:15:09.629713 journal@recovery recovering @28816
+16:15:09.631530 memdb@flush created L0@28818 N·1 S·184B "202..373,v19209":"202..373,v19209"
+16:15:09.632455 version@stat F·[8 7162 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.655730 db@janitor F·9607 G·0
+16:15:09.655760 db@open done T·41.668361ms
+16:15:09.655818 table@move L0@28818 -> L1
+16:15:09.656153 version@stat F·[7 7163 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.656943 db@close closing
+16:15:09.657804 table-move@commit exiting
+16:15:09.657837 db@write was delayed N·1 T·1.126248ms
+16:15:09.657862 db@close done T·923.622µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.658137 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.672680 version@stat F·[7 7163 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.672720 db@open opening
+16:15:09.683825 journal@recovery F·1
+16:15:09.685125 journal@recovery recovering @28819
+16:15:09.686653 memdb@flush created L0@28821 N·1 S·184B "202..064,v19211":"202..064,v19211"
+16:15:09.687985 version@stat F·[8 7163 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.709288 db@janitor F·9608 G·0
+16:15:09.709318 db@open done T·36.591736ms
+16:15:09.709362 table@move L0@28821 -> L1
+16:15:09.709664 version@stat F·[7 7164 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.710476 db@close closing
+16:15:09.711285 table-move@commit exiting
+16:15:09.711317 db@write was delayed N·1 T·1.111892ms
+16:15:09.711343 db@close done T·868.835µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.711595 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.730773 version@stat F·[7 7164 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.730811 db@open opening
+16:15:09.748076 journal@recovery F·1
+16:15:09.749345 journal@recovery recovering @28822
+16:15:09.750826 memdb@flush created L0@28824 N·1 S·184B "202..772,v19213":"202..772,v19213"
+16:15:09.752143 version@stat F·[8 7164 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.777039 db@janitor F·9609 G·0
+16:15:09.777075 db@open done T·46.256979ms
+16:15:09.777129 table@move L0@28824 -> L1
+16:15:09.777486 version@stat F·[7 7165 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.778201 db@close closing
+16:15:09.779126 table-move@commit exiting
+16:15:09.779150 db@write was delayed N·1 T·1.084416ms
+16:15:09.779172 db@close done T·970.426µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.779365 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.793687 version@stat F·[7 7165 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.793731 db@open opening
+16:15:09.804689 journal@recovery F·1
+16:15:09.805970 journal@recovery recovering @28825
+16:15:09.807988 memdb@flush created L0@28827 N·1 S·184B "202..188,v19215":"202..188,v19215"
+16:15:09.809906 version@stat F·[8 7165 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.830418 db@janitor F·9610 G·0
+16:15:09.830448 db@open done T·36.709733ms
+16:15:09.830499 table@move L0@28827 -> L1
+16:15:09.830791 version@stat F·[7 7166 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.831592 db@close closing
+16:15:09.832428 table-move@commit exiting
+16:15:09.832449 db@write was delayed N·1 T·1.091401ms
+16:15:09.832483 db@close done T·883.73µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.832719 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.847893 version@stat F·[7 7166 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.847935 db@open opening
+16:15:09.858804 journal@recovery F·1
+16:15:09.860339 journal@recovery recovering @28828
+16:15:09.861644 memdb@flush created L0@28830 N·1 S·184B "202..158,v19217":"202..158,v19217"
+16:15:09.862720 version@stat F·[8 7166 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.886616 db@janitor F·9611 G·0
+16:15:09.886646 db@open done T·38.704714ms
+16:15:09.886690 table@move L0@28830 -> L1
+16:15:09.886988 version@stat F·[7 7167 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.887782 db@close closing
+16:15:09.888793 table-move@commit exiting
+16:15:09.888816 db@write was delayed N·1 T·1.091004ms
+16:15:09.888849 db@close done T·1.057777ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.889043 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.904193 version@stat F·[7 7167 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.904234 db@open opening
+16:15:09.915436 journal@recovery F·1
+16:15:09.916781 journal@recovery recovering @28831
+16:15:09.918034 memdb@flush created L0@28833 N·1 S·184B "202..956,v19219":"202..956,v19219"
+16:15:09.919193 version@stat F·[8 7167 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.939896 db@janitor F·9612 G·0
+16:15:09.939923 db@open done T·35.682419ms
+16:15:09.939972 table@move L0@28833 -> L1
+16:15:09.940305 version@stat F·[7 7168 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.941052 db@close closing
+16:15:09.942102 table-move@commit exiting
+16:15:09.942142 db@write was delayed N·1 T·1.082477ms
+16:15:09.942168 db@close done T·1.115517ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:09.942435 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:09.957387 version@stat F·[7 7168 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.957441 db@open opening
+16:15:09.969152 journal@recovery F·1
+16:15:09.970397 journal@recovery recovering @28834
+16:15:09.971904 memdb@flush created L0@28836 N·1 S·184B "202..397,v19221":"202..397,v19221"
+16:15:09.973086 version@stat F·[8 7168 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:09.998040 db@janitor F·9613 G·0
+16:15:09.998083 db@open done T·40.632208ms
+16:15:09.998148 table@move L0@28836 -> L1
+16:15:09.998684 version@stat F·[7 7169 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:09.999221 db@close closing
+16:15:10.000336 table-move@commit exiting
+16:15:10.000358 db@write was delayed N·1 T·1.086116ms
+16:15:10.000385 db@close done T·1.164991ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.000580 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.016415 version@stat F·[7 7169 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.016463 db@open opening
+16:15:10.027458 journal@recovery F·1
+16:15:10.028795 journal@recovery recovering @28837
+16:15:10.030303 memdb@flush created L0@28839 N·1 S·184B "202..767,v19223":"202..767,v19223"
+16:15:10.031541 version@stat F·[8 7169 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.051947 db@janitor F·9614 G·0
+16:15:10.051977 db@open done T·35.506837ms
+16:15:10.052020 table@move L0@28839 -> L1
+16:15:10.052324 version@stat F·[7 7170 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.053136 db@close closing
+16:15:10.053820 table-move@commit exiting
+16:15:10.053838 db@write was delayed N·1 T·1.112721ms
+16:15:10.053858 db@close done T·722.818µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.054044 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.068237 version@stat F·[7 7170 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.068275 db@open opening
+16:15:10.079003 journal@recovery F·1
+16:15:10.080277 journal@recovery recovering @28840
+16:15:10.081993 memdb@flush created L0@28842 N·1 S·184B "202..230,v19225":"202..230,v19225"
+16:15:10.083213 version@stat F·[8 7170 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.108681 db@janitor F·9615 G·0
+16:15:10.108732 db@open done T·40.449086ms
+16:15:10.108806 table@move L0@28842 -> L1
+16:15:10.109382 version@stat F·[7 7171 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.109907 db@close closing
+16:15:10.112120 table-move@commit exiting
+16:15:10.112158 db@write was delayed N·1 T·1.099735ms
+16:15:10.112188 db@close done T·2.284415ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.112378 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.131268 version@stat F·[7 7171 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.131324 db@open opening
+16:15:10.144271 journal@recovery F·1
+16:15:10.145693 journal@recovery recovering @28843
+16:15:10.147270 memdb@flush created L0@28845 N·1 S·184B "202..924,v19227":"202..924,v19227"
+16:15:10.148474 version@stat F·[8 7171 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.169405 db@janitor F·9616 G·0
+16:15:10.169432 db@open done T·38.099726ms
+16:15:10.169474 table@move L0@28845 -> L1
+16:15:10.169789 version@stat F·[7 7172 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.170595 db@close closing
+16:15:10.171442 table-move@commit exiting
+16:15:10.171465 db@write was delayed N·1 T·1.111792ms
+16:15:10.171484 db@close done T·889.873µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.171678 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.187569 version@stat F·[7 7172 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.187605 db@open opening
+16:15:10.199827 journal@recovery F·1
+16:15:10.201094 journal@recovery recovering @28846
+16:15:10.202763 memdb@flush created L0@28848 N·1 S·184B "202..743,v19229":"202..743,v19229"
+16:15:10.204049 version@stat F·[8 7172 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.225998 db@janitor F·9617 G·0
+16:15:10.226080 db@open done T·38.462708ms
+16:15:10.226156 table@move L0@28848 -> L1
+16:15:10.227174 version@stat F·[7 7173 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.227285 db@close closing
+16:15:10.228858 table-move@commit exiting
+16:15:10.228907 db@write was delayed N·1 T·1.128552ms
+16:15:10.228936 db@close done T·1.652647ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.229162 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.244821 version@stat F·[7 7173 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.244876 db@open opening
+16:15:10.255902 journal@recovery F·1
+16:15:10.257139 journal@recovery recovering @28849
+16:15:10.258718 memdb@flush created L0@28851 N·1 S·184B "202..219,v19231":"202..219,v19231"
+16:15:10.260168 version@stat F·[8 7173 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.281457 db@janitor F·9618 G·0
+16:15:10.281489 db@open done T·36.607259ms
+16:15:10.281535 table@move L0@28851 -> L1
+16:15:10.281854 version@stat F·[7 7174 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.282611 db@close closing
+16:15:10.283460 table-move@commit exiting
+16:15:10.283486 db@write was delayed N·1 T·1.075909ms
+16:15:10.283509 db@close done T·900.397µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.283716 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.306319 version@stat F·[7 7174 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.306397 db@open opening
+16:15:10.318394 journal@recovery F·1
+16:15:10.319679 journal@recovery recovering @28852
+16:15:10.321382 memdb@flush created L0@28854 N·1 S·184B "202..768,v19233":"202..768,v19233"
+16:15:10.322611 version@stat F·[8 7174 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.354128 db@janitor F·9619 G·0
+16:15:10.354186 db@open done T·47.776348ms
+16:15:10.354252 table@move L0@28854 -> L1
+16:15:10.354969 version@stat F·[7 7175 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.355336 db@close closing
+16:15:10.356608 table-move@commit exiting
+16:15:10.356635 db@write was delayed N·1 T·1.08866ms
+16:15:10.356659 db@close done T·1.325858ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.356895 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.372963 version@stat F·[7 7175 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.373000 db@open opening
+16:15:10.384299 journal@recovery F·1
+16:15:10.385743 journal@recovery recovering @28855
+16:15:10.386893 memdb@flush created L0@28857 N·1 S·184B "202..404,v19235":"202..404,v19235"
+16:15:10.388192 version@stat F·[8 7175 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.412205 db@janitor F·9620 G·0
+16:15:10.412238 db@open done T·39.231322ms
+16:15:10.412304 table@move L0@28857 -> L1
+16:15:10.413041 version@stat F·[7 7176 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.413376 db@close closing
+16:15:10.414671 table-move@commit exiting
+16:15:10.414697 db@write was delayed N·1 T·1.079674ms
+16:15:10.414716 db@close done T·1.342813ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.414917 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.431163 version@stat F·[7 7176 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.431203 db@open opening
+16:15:10.442259 journal@recovery F·1
+16:15:10.443879 journal@recovery recovering @28858
+16:15:10.445422 memdb@flush created L0@28860 N·1 S·184B "202..222,v19237":"202..222,v19237"
+16:15:10.446683 version@stat F·[8 7176 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.473876 db@janitor F·9621 G·0
+16:15:10.473923 db@open done T·42.712618ms
+16:15:10.473981 table@move L0@28860 -> L1
+16:15:10.474919 version@stat F·[7 7177 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.475429 db@close closing
+16:15:10.476681 table-move@commit exiting
+16:15:10.476751 db@write was delayed N·1 T·1.435744ms
+16:15:10.476787 db@close done T·1.361399ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.477217 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.494213 version@stat F·[7 7177 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.494286 db@open opening
+16:15:10.507179 journal@recovery F·1
+16:15:10.508882 journal@recovery recovering @28861
+16:15:10.510822 memdb@flush created L0@28863 N·1 S·184B "202..315,v19239":"202..315,v19239"
+16:15:10.512491 version@stat F·[8 7177 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.533981 db@janitor F·9622 G·0
+16:15:10.534009 db@open done T·39.715414ms
+16:15:10.534053 table@move L0@28863 -> L1
+16:15:10.534379 version@stat F·[7 7178 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.535162 db@close closing
+16:15:10.536039 table-move@commit exiting
+16:15:10.536061 db@write was delayed N·1 T·1.109863ms
+16:15:10.536080 db@close done T·919.718µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.536285 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.550822 version@stat F·[7 7178 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.550856 db@open opening
+16:15:10.561871 journal@recovery F·1
+16:15:10.563262 journal@recovery recovering @28864
+16:15:10.564629 memdb@flush created L0@28866 N·1 S·184B "202..256,v19241":"202..256,v19241"
+16:15:10.565411 version@stat F·[8 7178 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.587353 db@janitor F·9623 G·0
+16:15:10.587400 db@open done T·36.537196ms
+16:15:10.587449 table@move L0@28866 -> L1
+16:15:10.587809 version@stat F·[7 7179 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.588534 db@close closing
+16:15:10.589338 table-move@commit exiting
+16:15:10.589361 db@write was delayed N·1 T·1.080421ms
+16:15:10.589386 db@close done T·853.632µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.589566 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.604929 version@stat F·[7 7179 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.604968 db@open opening
+16:15:10.616908 journal@recovery F·1
+16:15:10.618156 journal@recovery recovering @28867
+16:15:10.619782 memdb@flush created L0@28869 N·1 S·184B "202..204,v19243":"202..204,v19243"
+16:15:10.621024 version@stat F·[8 7179 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.644299 db@janitor F·9624 G·0
+16:15:10.644334 db@open done T·39.359697ms
+16:15:10.644384 table@move L0@28869 -> L1
+16:15:10.644697 version@stat F·[7 7180 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.645488 db@close closing
+16:15:10.646265 table-move@commit exiting
+16:15:10.646286 db@write was delayed N·1 T·1.111462ms
+16:15:10.646320 db@close done T·823.598µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.646524 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.663382 version@stat F·[7 7180 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.663440 db@open opening
+16:15:10.675007 journal@recovery F·1
+16:15:10.676495 journal@recovery recovering @28870
+16:15:10.678350 memdb@flush created L0@28872 N·1 S·184B "202..099,v19245":"202..099,v19245"
+16:15:10.679596 version@stat F·[8 7180 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.700714 db@janitor F·9625 G·0
+16:15:10.700750 db@open done T·37.302939ms
+16:15:10.700832 table@move L0@28872 -> L1
+16:15:10.701318 version@stat F·[7 7181 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.701922 db@close closing
+16:15:10.702937 table-move@commit exiting
+16:15:10.702974 db@write was delayed N·1 T·1.116748ms
+16:15:10.703005 db@close done T·1.085806ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.703323 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.720208 version@stat F·[7 7181 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.720247 db@open opening
+16:15:10.732496 journal@recovery F·1
+16:15:10.733845 journal@recovery recovering @28873
+16:15:10.735442 memdb@flush created L0@28875 N·1 S·184B "202..976,v19247":"202..976,v19247"
+16:15:10.736701 version@stat F·[8 7181 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.759266 db@janitor F·9626 G·0
+16:15:10.759319 db@open done T·39.065484ms
+16:15:10.759389 table@move L0@28875 -> L1
+16:15:10.759968 version@stat F·[7 7182 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.760449 db@close closing
+16:15:10.762718 table-move@commit exiting
+16:15:10.762743 db@write was delayed N·1 T·1.08627ms
+16:15:10.762765 db@close done T·2.314654ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.763001 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.776690 version@stat F·[7 7182 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.776773 db@open opening
+16:15:10.787801 journal@recovery F·1
+16:15:10.789025 journal@recovery recovering @28876
+16:15:10.791186 memdb@flush created L0@28878 N·1 S·184B "202..376,v19249":"202..376,v19249"
+16:15:10.792714 version@stat F·[8 7182 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.817616 db@janitor F·9627 G·0
+16:15:10.817648 db@open done T·40.86757ms
+16:15:10.817704 table@move L0@28878 -> L1
+16:15:10.818371 version@stat F·[7 7183 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.818798 db@close closing
+16:15:10.819973 table-move@commit exiting
+16:15:10.820000 db@write was delayed N·1 T·1.107762ms
+16:15:10.820025 db@close done T·1.226967ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.820249 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.840387 version@stat F·[7 7183 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.840440 db@open opening
+16:15:10.852927 journal@recovery F·1
+16:15:10.854098 journal@recovery recovering @28879
+16:15:10.855768 memdb@flush created L0@28881 N·1 S·184B "202..406,v19251":"202..406,v19251"
+16:15:10.857546 version@stat F·[8 7183 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.879767 db@janitor F·9628 G·0
+16:15:10.879802 db@open done T·39.353272ms
+16:15:10.879847 table@move L0@28881 -> L1
+16:15:10.880236 version@stat F·[7 7184 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.881020 db@close closing
+16:15:10.881933 table-move@commit exiting
+16:15:10.881959 db@write was delayed N·1 T·1.165454ms
+16:15:10.881978 db@close done T·959.63µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.882176 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.897912 version@stat F·[7 7184 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.897956 db@open opening
+16:15:10.908918 journal@recovery F·1
+16:15:10.910531 journal@recovery recovering @28882
+16:15:10.911884 memdb@flush created L0@28884 N·1 S·184B "202..903,v19253":"202..903,v19253"
+16:15:10.913252 version@stat F·[8 7184 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.933787 db@janitor F·9629 G·0
+16:15:10.933819 db@open done T·35.856745ms
+16:15:10.933872 table@move L0@28884 -> L1
+16:15:10.934187 version@stat F·[7 7185 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.934987 db@close closing
+16:15:10.935845 table-move@commit exiting
+16:15:10.935866 db@write was delayed N·1 T·1.093098ms
+16:15:10.935894 db@close done T·904.238µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.936076 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:10.955371 version@stat F·[7 7185 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.955409 db@open opening
+16:15:10.966518 journal@recovery F·1
+16:15:10.967703 journal@recovery recovering @28885
+16:15:10.969418 memdb@flush created L0@28887 N·1 S·184B "202..184,v19255":"202..184,v19255"
+16:15:10.970231 version@stat F·[8 7185 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:10.990774 db@janitor F·9630 G·0
+16:15:10.990809 db@open done T·35.392333ms
+16:15:10.990887 table@move L0@28887 -> L1
+16:15:10.991756 version@stat F·[7 7186 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:10.992019 db@close closing
+16:15:10.993491 table-move@commit exiting
+16:15:10.993537 db@write was delayed N·1 T·1.137124ms
+16:15:10.993573 db@close done T·1.55595ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:10.993932 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:11.014237 version@stat F·[7 7186 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.014275 db@open opening
+16:15:11.025555 journal@recovery F·1
+16:15:11.027143 journal@recovery recovering @28888
+16:15:11.028929 memdb@flush created L0@28890 N·1 S·184B "202..925,v19257":"202..925,v19257"
+16:15:11.029864 version@stat F·[8 7186 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:11.050567 db@janitor F·9631 G·0
+16:15:11.050598 db@open done T·36.31654ms
+16:15:11.050640 table@move L0@28890 -> L1
+16:15:11.050967 version@stat F·[7 7187 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.051722 db@close closing
+16:15:11.052596 table-move@commit exiting
+16:15:11.052617 db@write was delayed N·1 T·1.083795ms
+16:15:11.052638 db@close done T·915.741µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:11.052819 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:11.071228 version@stat F·[7 7187 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.071297 db@open opening
+16:15:11.083868 journal@recovery F·1
+16:15:11.085183 journal@recovery recovering @28891
+16:15:11.086649 memdb@flush created L0@28893 N·1 S·184B "202..887,v19259":"202..887,v19259"
+16:15:11.087569 version@stat F·[8 7187 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:11.108024 db@janitor F·9632 G·0
+16:15:11.108071 db@open done T·36.765647ms
+16:15:11.108119 table@move L0@28893 -> L1
+16:15:11.108637 version@stat F·[7 7188 2435] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.109523 table@move L1@7318 -> L2
+16:15:11.109618 db@close closing
+16:15:11.109966 version@stat F·[7 7187 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.110749 table-move@commit exiting
+16:15:11.110775 db@write was delayed N·1 T·1.487462ms
+16:15:11.110796 db@close done T·1.179978ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:11.111026 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:11.126806 version@stat F·[7 7187 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.126851 db@open opening
+16:15:11.137838 journal@recovery F·1
+16:15:11.139005 journal@recovery recovering @28894
+16:15:11.140583 memdb@flush created L0@28896 N·1 S·184B "202..762,v19261":"202..762,v19261"
+16:15:11.141684 version@stat F·[8 7187 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:11.162740 db@janitor F·9633 G·0
+16:15:11.162771 db@open done T·35.914145ms
+16:15:11.162823 table@move L0@28896 -> L1
+16:15:11.163488 version@stat F·[7 7188 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.163932 db@close closing
+16:15:11.165031 table-move@commit exiting
+16:15:11.165058 db@write was delayed N·1 T·1.116995ms
+16:15:11.165083 db@close done T·1.152152ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:11.165303 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:11.184493 version@stat F·[7 7188 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.184529 db@open opening
+16:15:11.198350 journal@recovery F·1
+16:15:11.199547 journal@recovery recovering @28897
+16:15:11.201221 memdb@flush created L0@28899 N·1 S·184B "202..847,v19263":"202..847,v19263"
+16:15:11.202624 version@stat F·[8 7188 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:11.224094 db@janitor F·9634 G·0
+16:15:11.224131 db@open done T·39.596294ms
+16:15:11.224194 table@move L0@28899 -> L1
+16:15:11.224567 version@stat F·[7 7189 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.225274 db@close closing
+16:15:11.226237 table-move@commit exiting
+16:15:11.226267 db@write was delayed N·1 T·1.091003ms
+16:15:11.226286 db@close done T·1.015072ms
+=============== Mar 11, 2023 (IST) ===============
+16:15:11.226481 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:11.240501 version@stat F·[7 7189 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.240557 db@open opening
+16:15:11.251689 journal@recovery F·1
+16:15:11.252945 journal@recovery recovering @28900
+16:15:11.254550 memdb@flush created L0@28902 N·1 S·184B "202..565,v19265":"202..565,v19265"
+16:15:11.255456 version@stat F·[8 7189 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:11.276518 db@janitor F·9635 G·0
+16:15:11.276553 db@open done T·35.989387ms
+16:15:11.276610 table@move L0@28902 -> L1
+16:15:11.276986 version@stat F·[7 7190 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.277690 db@close closing
+16:15:11.278619 table-move@commit exiting
+16:15:11.278640 db@write was delayed N·1 T·1.090864ms
+16:15:11.278659 db@close done T·971.049µs
+=============== Mar 11, 2023 (IST) ===============
+16:15:11.278846 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:15:11.294350 version@stat F·[7 7190 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.294411 db@open opening
+16:15:11.305577 journal@recovery F·1
+16:15:11.307161 journal@recovery recovering @28903
+16:15:11.308881 memdb@flush created L0@28905 N·1 S·184B "202..986,v19267":"202..986,v19267"
+16:15:11.310551 version@stat F·[8 7190 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[2.00 1.91 0.07]
+16:15:11.333743 db@janitor F·9636 G·0
+16:15:11.333774 db@open done T·39.356489ms
+16:15:11.333825 table@move L0@28905 -> L1
+16:15:11.334473 version@stat F·[7 7191 2436] S·264MiB[184KiB 191MiB 72MiB] Sc·[1.75 1.91 0.07]
+16:15:11.335166 db@close closing
+16:15:11.336061 table-move@commit exiting
+16:15:11.336088 db@write was delayed N·1 T·1.343467ms
+16:15:11.336112 db@close done T·946.955µs
